@@ -1,0 +1,6 @@
+pandas
+streamlit
+base64
+io
+statistics
+re
