@@ -1,6 +1,6 @@
-pandas
-streamlit
+pandas==1.2.4
+streamlit==0.84.1
 base64
 io
 statistics
-re
+re==2.2.1
