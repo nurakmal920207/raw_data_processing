@@ -58,7 +58,7 @@ if uploaded_file is not None:
     st.markdown('Thank you for using Data Cleaner!')
     
 #provide suggestion link
-link = '[Please share if you have any suggestion for improvement of you want to report a bug](https://forms.office.com/Pages/ResponsePage.aspx?id=BlODKFlo-E6I5KHr1GzOJEv7TmtyHRNHnUMQjktWMlhUMjlMOElYRjJES1VYVEtKN1E2RUFTQjRJVS4u)'
+link = '[Please click here if you have any suggestion for improvement or if you want to report a bug](https://forms.office.com/Pages/ResponsePage.aspx?id=BlODKFlo-E6I5KHr1GzOJEv7TmtyHRNHnUMQjktWMlhUMjlMOElYRjJES1VYVEtKN1E2RUFTQjRJVS4u)'
 st.markdown(link, unsafe_allow_html=True)
 
 
