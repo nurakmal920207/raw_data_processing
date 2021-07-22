@@ -53,10 +53,13 @@ if uploaded_file is not None:
         
     st.write(df)
     
-    #proovide download link
+    #provide download link
     st.markdown(get_table_download_link(df), unsafe_allow_html=True)
     st.markdown('Thank you for using Data Cleaner!')
-# In[7]:
+    
+#provide suggestion link
+link = '[Please share if you have any suggestion for improvement of you want to report a bug](https://forms.office.com/Pages/ResponsePage.aspx?id=BlODKFlo-E6I5KHr1GzOJEv7TmtyHRNHnUMQjktWMlhUMjlMOElYRjJES1VYVEtKN1E2RUFTQjRJVS4u)'
+st.markdown(link, unsafe_allow_html=True)
 
 
 
