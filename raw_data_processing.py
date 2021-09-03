@@ -9,6 +9,7 @@ import base64
 import io
 from statistics import mode
 import re
+import yagmail
 
 #create download link
 @st.cache
@@ -56,6 +57,17 @@ if uploaded_file is not None:
     #provide download link
     st.markdown(get_table_download_link(df), unsafe_allow_html=True)
     st.markdown('Thank you for using Data Cleaner!')
+    
+    receiver = "akmal.nordi@cima.com.my"
+    body = "Raw Data Processing app was used"
+
+    yag = yagmail.SMTP("pythonakmal@gmail.com",st.secrets['email']['pwd'])
+    yag.send(
+        to=receiver,
+        subject="Raw Data Processing",
+        contents=body, 
+    )
+    
     
 #provide suggestion link
 link = '[Please click here if you have any suggestion for improvement or if you want to report a bug](https://forms.office.com/Pages/ResponsePage.aspx?id=BlODKFlo-E6I5KHr1GzOJEv7TmtyHRNHnUMQjktWMlhUMjlMOElYRjJES1VYVEtKN1E2RUFTQjRJVS4u)'
